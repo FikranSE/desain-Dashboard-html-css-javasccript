@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Merriweather:wght@300;700&family=Montserrat:wght@500&family=Neonderthaw&family=Pacifico&family=Paytone+One&family=Plus+Jakarta+Sans:wght@800&family=Poppins:wght@300&family=Radio+Canada&family=Roboto+Mono:wght@502&family=Roboto+Slab:wght@700&family=Roboto:wght@300;400;500;700&family=Slabo+27px&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    min-height:100vh;
+    background:#eff0f3;
+}
+
+section{
+    display:flex;
+    width:100%;
+    height:100vh;
+}
+aside{
+    width:220px;
+    background-color:#555c71;
+}
+.sidebar{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+
+nav{
+    position:fixed;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: start;
+    align-items:start;
+    padding:20px;
+}
+nav ul{
+    list-style:none;
+    
+}
+nav ul li{
+    display:flex;
+    justify-content:start;
+    align-items:start;
+    cursor:pointer;
+}
+nav ul li .bi{
+    margin-right:12px;
+    color:black;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#0d0d0d;
+    font-size:17px;
+    font-family: 'Montserrat', sans-serif;
+}
+nav ul li:hover a{
+    color:#009879;
+}
+
+main{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    padding:30px;
+    background:#fffffe;
+}
+.title{
+    margin:20px 0;
+}
+.title h3{
+    color:#009879;
+    font-size:40px;
+    font-weight:bold;
+    font-family: 'Merriweather', serif;
+}
+
+.content-table{
+    border-collapse:collapse;
+    width:100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size:0.9em;
+    overflow:hidden;
+    box-shadow:0 0 20px 0 rgba(0,0,0, 0.15);
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+
+.content-table thead tr{
+    background-color:#009879;
+    color:#fff;
+    text-align:left;
+    font-weight:bold;
+}
+.content-table th,
+.content-table td{
+    padding:12px 35px;
+}
+
+.content-table tbody tr{
+    border-bottom:1px solid #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color:#f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom:2px solid #009879;
+}
+.active{
+    font-weight:bold;
+    color:#009879;
+}
